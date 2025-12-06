@@ -1,0 +1,91 @@
+
+:root {
+    --primary-color: #130101; 
+    --header-bg: #3f301d; 
+    --secondary-color:#d4c599; 
+    --text-color: #181304;
+    --header-text-color: white; 
+}
+
+.resume-container {
+    border-radius: 0;
+    overflow: hidden;
+    min-height: 100vh; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header-section {
+    background-color: var(--header-bg) !important;
+    color: var(--header-text-color) !important;
+}
+
+
+.sidebar-left {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border-right: 1px solid #ddd; 
+}
+
+
+.profile-img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    display: block;
+}
+
+
+.profile-photo-container {
+    width: 130px;
+    height: 150px;
+    margin: 0 auto 20px auto;
+    border-radius: 50%;
+    overflow: hidden; 
+    background-color: #ccc; 
+    border: 5px solid white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.sidebar-left h2 {
+    color: var(--primary-color);
+    border-color: var(--primary-color) !important;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem !important;
+}
+
+
+.nav-tabs .nav-link {
+    color: var(--text-color);
+    border: none;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.nav-tabs .nav-link.active {
+    color: var(--primary-color);
+    background-color: transparent;
+    border-bottom-color: var(--primary-color);
+    font-weight: bold;
+}
+
+.text-primary-color {
+    color: var(--primary-color) !important;
+}
+
+
+.interests-list li {
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 991.98px) {
+    .sidebar-left {
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+}
